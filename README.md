@@ -11,17 +11,19 @@ As of now, the application requires the avrdude binary and associated conf file 
 
 ### Usage
 
+Plug in 'yerr board, and run:
+
 hexduino -b BOARD_NAME -f /path/to/file.hex
 
 Currently supports:
-#Mega 2560 
+####Mega 2560 
 -b mega2560
 
-#Uno
+####Uno
 -b uno
 (UNTESTED)
 
-#Leonardo
+####Leonardo
 -b leonardo
 (UNTESTED)
 
