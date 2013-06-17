@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-               BuildableName = "flasharduinomega"
+               BuildableName = "Hexduino"
                BlueprintName = "Hexduino"
                ReferencedContainer = "container:Hexduino.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "flasharduinomega"
+            BuildableName = "Hexduino"
             BlueprintName = "Hexduino"
             ReferencedContainer = "container:Hexduino.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "flasharduinomega"
+            BuildableName = "Hexduino"
             BlueprintName = "Hexduino"
             ReferencedContainer = "container:Hexduino.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "flasharduinomega"
+            BuildableName = "Hexduino"
             BlueprintName = "Hexduino"
             ReferencedContainer = "container:Hexduino.xcodeproj">
          </BuildableReference>
