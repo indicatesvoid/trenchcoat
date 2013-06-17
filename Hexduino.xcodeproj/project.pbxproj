@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FACB3FC176BB58600E956A5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FACB3FB176BB58600E956A5 /* main.cpp */; };
-		7FACB3FE176BB58600E956A5 /* flasharduinomega.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FACB3FD176BB58600E956A5 /* flasharduinomega.1 */; };
+		7FACBAC3176BF70600E956A5 /* Arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FACBAC1176BF70600E956A5 /* Arduino.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +18,18 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				7FACB3FE176BB58600E956A5 /* flasharduinomega.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7FACB3F8176BB58600E956A5 /* flasharduinomega */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = flasharduinomega; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FACB3F8176BB58600E956A5 /* Hexduino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hexduino; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FACB3FB176BB58600E956A5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7FACB3FD176BB58600E956A5 /* flasharduinomega.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = flasharduinomega.1; sourceTree = "<group>"; };
+		7FACBAC0176BF4D900E956A5 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		7FACBAC1176BF70600E956A5 /* Arduino.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arduino.cpp; sourceTree = "<group>"; };
+		7FACBAC2176BF70600E956A5 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
+		7FACBADF176FACB900E956A5 /* ezOptionParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ezOptionParser.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 		7FACB3EF176BB58600E956A5 = {
 			isa = PBXGroup;
 			children = (
-				7FACB3FA176BB58600E956A5 /* flasharduinomega */,
+				7FACB3FA176BB58600E956A5 /* src */,
 				7FACB3F9176BB58600E956A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +54,29 @@
 		7FACB3F9176BB58600E956A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FACB3F8176BB58600E956A5 /* flasharduinomega */,
+				7FACB3F8176BB58600E956A5 /* Hexduino */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FACB3FA176BB58600E956A5 /* flasharduinomega */ = {
+		7FACB3FA176BB58600E956A5 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				7FACB3FB176BB58600E956A5 /* main.cpp */,
-				7FACB3FD176BB58600E956A5 /* flasharduinomega.1 */,
+				7FACBAC0176BF4D900E956A5 /* main.h */,
+				7FACBAC1176BF70600E956A5 /* Arduino.cpp */,
+				7FACBAC2176BF70600E956A5 /* Arduino.h */,
+				7FACBADF176FACB900E956A5 /* ezOptionParser.hpp */,
 			);
-			path = flasharduinomega;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FACB3F7176BB58600E956A5 /* flasharduinomega */ = {
+		7FACB3F7176BB58600E956A5 /* Hexduino */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "flasharduinomega" */;
+			buildConfigurationList = 7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "Hexduino" */;
 			buildPhases = (
 				7FACB3F4176BB58600E956A5 /* Sources */,
 				7FACB3F5176BB58600E956A5 /* Frameworks */,
@@ -81,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = flasharduinomega;
+			name = Hexduino;
 			productName = flasharduinomega;
-			productReference = 7FACB3F8176BB58600E956A5 /* flasharduinomega */;
+			productReference = 7FACB3F8176BB58600E956A5 /* Hexduino */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +100,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "William A. Clark";
 			};
-			buildConfigurationList = 7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "flasharduinomega" */;
+			buildConfigurationList = 7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "Hexduino" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FACB3F7176BB58600E956A5 /* flasharduinomega */,
+				7FACB3F7176BB58600E956A5 /* Hexduino */,
 			);
 		};
 /* End PBXProject section */
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FACB3FC176BB58600E956A5 /* main.cpp in Sources */,
+				7FACBAC3176BF70600E956A5 /* Arduino.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,21 +192,57 @@
 		7FACB402176BB58600E956A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/glut/lib/osx\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/assimp/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/cairo/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/fmodex/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/FreeImage/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/freetype/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/glew/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/openFrameworksCompiled/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/poco/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/rtAudio/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/tess2/lib/osx\"",
+				);
+				PRODUCT_NAME = Hexduino;
 			};
 			name = Debug;
 		};
 		7FACB403176BB58600E956A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/glut/lib/osx\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/assimp/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/cairo/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/fmodex/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/FreeImage/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/freetype/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/glew/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/openFrameworksCompiled/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/poco/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/rtAudio/lib/osx\"",
+					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/tess2/lib/osx\"",
+				);
+				PRODUCT_NAME = Hexduino;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "flasharduinomega" */ = {
+		7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "Hexduino" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FACB3FF176BB58600E956A5 /* Debug */,
@@ -209,13 +251,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "flasharduinomega" */ = {
+		7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "Hexduino" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FACB402176BB58600E956A5 /* Debug */,
 				7FACB403176BB58600E956A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
