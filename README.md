@@ -1,4 +1,4 @@
-hexduino
+trenchcoat
 ========
 
 Simple application using avrdude to flash a HEX file to an Arduino over the command line.
@@ -13,7 +13,7 @@ As of now, the application requires the avrdude binary and associated conf file 
 
 Plug in 'yerr board, and run:
 
-hexduino -b BOARD_NAME -f /path/to/file.hex
+trenchcoat -b BOARD_NAME -f /path/to/file.hex
 
 Currently supports:
 ####Mega 2560 
