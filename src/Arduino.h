@@ -1,6 +1,6 @@
 //
 //  Arduino.h
-//  Hexduino
+//  Trenchcoat
 //
 //  Created by William A. Clark on 6/14/13.
 //  Do as ye please.

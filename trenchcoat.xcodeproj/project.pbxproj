@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7FACB3F8176BB58600E956A5 /* Hexduino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hexduino; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FACB3F8176BB58600E956A5 /* trenchcoat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trenchcoat; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FACB3FB176BB58600E956A5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7FACBAC0176BF4D900E956A5 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		7FACBAC1176BF70600E956A5 /* Arduino.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arduino.cpp; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		7FACB3F9176BB58600E956A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FACB3F8176BB58600E956A5 /* Hexduino */,
+				7FACB3F8176BB58600E956A5 /* trenchcoat */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,9 +74,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FACB3F7176BB58600E956A5 /* Hexduino */ = {
+		7FACB3F7176BB58600E956A5 /* trenchcoat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "Hexduino" */;
+			buildConfigurationList = 7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "trenchcoat" */;
 			buildPhases = (
 				7FACB3F4176BB58600E956A5 /* Sources */,
 				7FACB3F5176BB58600E956A5 /* Frameworks */,
@@ -86,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = Hexduino;
+			name = trenchcoat;
 			productName = flasharduinomega;
-			productReference = 7FACB3F8176BB58600E956A5 /* Hexduino */;
+			productReference = 7FACB3F8176BB58600E956A5 /* trenchcoat */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "William A. Clark";
 			};
-			buildConfigurationList = 7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "Hexduino" */;
+			buildConfigurationList = 7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "trenchcoat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FACB3F7176BB58600E956A5 /* Hexduino */,
+				7FACB3F7176BB58600E956A5 /* trenchcoat */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +210,7 @@
 					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/rtAudio/lib/osx\"",
 					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/tess2/lib/osx\"",
 				);
-				PRODUCT_NAME = Hexduino;
+				PRODUCT_NAME = trenchcoat;
 			};
 			name = Debug;
 		};
@@ -235,14 +235,14 @@
 					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/rtAudio/lib/osx\"",
 					"\"$(SRCROOT)/../../../of_v0.7.4_osx_release/libs/tess2/lib/osx\"",
 				);
-				PRODUCT_NAME = Hexduino;
+				PRODUCT_NAME = trenchcoat;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "Hexduino" */ = {
+		7FACB3F3176BB58600E956A5 /* Build configuration list for PBXProject "trenchcoat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FACB3FF176BB58600E956A5 /* Debug */,
@@ -251,7 +251,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "Hexduino" */ = {
+		7FACB401176BB58600E956A5 /* Build configuration list for PBXNativeTarget "trenchcoat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FACB402176BB58600E956A5 /* Debug */,

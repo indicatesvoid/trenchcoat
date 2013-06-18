@@ -1,6 +1,6 @@
 //
 //  Arduino.cpp
-//  Hexduino
+//  Trenchcoat
 //
 //  Created by William A. Clark on 6/14/13.
 //  Based off of the OpenFrameworks ofSerial class
