@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Hexduino
+//  Trenchcoat
 //
 //  Created by William A. Clark on 6/14/13.
 //
@@ -14,8 +14,8 @@ int main(int argc, const char * argv[])
     ez::ezOptionParser opt;
     
     opt.overview = "Simple program to flash a HEX file to an Arduino from the commandline.";
-    opt.syntax = "hexduino [OPTIONS]";
-    opt.example = "hexduino -b mega2560 -f /path/to/file.hex\n\n";
+    opt.syntax = "trenchcoat [OPTIONS]";
+    opt.example = "trenchcoat -b mega2560 -f /path/to/file.hex\n\n";
     
     opt.add(
             "", // Default.

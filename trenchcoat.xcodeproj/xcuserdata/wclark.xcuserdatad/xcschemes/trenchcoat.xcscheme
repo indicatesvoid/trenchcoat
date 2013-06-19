@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-               BuildableName = "Hexduino"
-               BlueprintName = "Hexduino"
-               ReferencedContainer = "container:Hexduino.xcodeproj">
+               BuildableName = "trenchcoat"
+               BlueprintName = "trenchcoat"
+               ReferencedContainer = "container:trenchcoat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "Hexduino"
-            BlueprintName = "Hexduino"
-            ReferencedContainer = "container:Hexduino.xcodeproj">
+            BuildableName = "trenchcoat"
+            BlueprintName = "trenchcoat"
+            ReferencedContainer = "container:trenchcoat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "Hexduino"
-            BlueprintName = "Hexduino"
-            ReferencedContainer = "container:Hexduino.xcodeproj">
+            BuildableName = "trenchcoat"
+            BlueprintName = "trenchcoat"
+            ReferencedContainer = "container:trenchcoat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FACB3F7176BB58600E956A5"
-            BuildableName = "Hexduino"
-            BlueprintName = "Hexduino"
-            ReferencedContainer = "container:Hexduino.xcodeproj">
+            BuildableName = "trenchcoat"
+            BlueprintName = "trenchcoat"
+            ReferencedContainer = "container:trenchcoat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

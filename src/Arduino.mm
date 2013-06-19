@@ -1,6 +1,6 @@
 //
 //  Arduino.cpp
-//  Hexduino
+//  Trenchcoat
 //
 //  Created by William A. Clark on 6/14/13.
 //  Based off of the OpenFrameworks ofSerial class
@@ -68,11 +68,21 @@ void Arduino::listDetectedDevices() {
     }
 }
 
-void Arduino::listSupportedBoards() {
+vector<string> Arduino::returnSupportedBoards() {
+    vector<string> supportedBoards;
     for(int i = 0; i < SUPPORTED_BOARDS; i++) {
         std::string board_name = boards[i].name;
         board_name[0] = toupper(board_name[0]);
-        std::cout << "  " << boards[i].name << "\n";
+        supportedBoards.push_back(board_name);
+    }
+    return supportedBoards;
+}
+
+
+void Arduino::printSupportedBoards() {
+    vector<string> supportedBoards = returnSupportedBoards();
+    for(int i = 0; i < supportedBoards.size(); i++) {
+        std::cout << "  " << supportedBoards[i] << "\n";
     }
     std::cout << "\n";
 }
@@ -146,14 +156,19 @@ string Arduino::chooseActiveDevice() {
 
 string Arduino::getAvrCommand(string board, string hexPath) {
     std::string boardCmd = findBoardCommandByName(board);
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    std::string *avrdude =  new std::string([[mainBundle pathForResource:@"avrdude" ofType:nil] UTF8String]);
+    std::string *conf =  new std::string([[mainBundle pathForResource:@"avrdude.conf" ofType:nil] UTF8String]);
     std::cout << "Flashing...";
-    string cmd = "./avrdude -C avrdude.conf -p" + boardCmd + " -c wiring -P" + device_path + " -b 115200 -D -U flash:w:" + hexPath;
+    string cmd = *avrdude + " -C " + *conf + " -p" + boardCmd + " -c wiring -P" + device_path + " -b 115200 -D -U flash:w:" + hexPath;
     return cmd;
 }
 
 string Arduino::findBoardCommandByName(string name) {
+    string _name = name;
+    std::transform(_name.begin(), _name.end(), _name.begin(), ::tolower);
     for(int i = 0; i < SUPPORTED_BOARDS; i++) {
-        if(boards[i].name == name) {
+        if(boards[i].name == _name) {
             return boards[i].cmd;
         }
     }

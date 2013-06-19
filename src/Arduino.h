@@ -1,11 +1,12 @@
 //
 //  Arduino.h
-//  Hexduino
+//  Trenchcoat
 //
 //  Created by William A. Clark on 6/14/13.
 //  Do as ye please.
 //
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <map>
@@ -24,7 +25,8 @@ class Arduino {
         bool connect(int baud);
         void resetArduino();
         void flash(std::string board, std::string hexPath);
-        void listSupportedBoards();
+        std::vector<std::string> returnSupportedBoards();
+        void printSupportedBoards();
     
     private:
 
